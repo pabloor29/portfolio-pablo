@@ -1,24 +1,47 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-dots: #adb5bd;
+    --color-whiteSmoked: #e9ecef;
+    --color-greenLight: #80ed99;
+
+    --font-londrinaSketch: 'Londrina Sketch';
+    --font-geo: 'Geo';
+    --font-roboto: 'Roboto';
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: "Londrina Sketch";
+    src: url("https://db.onlinewebfonts.com/t/0923fee7a9cfcadd9e684beef99ddc69.eot");
+    src: url("https://db.onlinewebfonts.com/t/0923fee7a9cfcadd9e684beef99ddc69.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0923fee7a9cfcadd9e684beef99ddc69.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0923fee7a9cfcadd9e684beef99ddc69.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0923fee7a9cfcadd9e684beef99ddc69.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0923fee7a9cfcadd9e684beef99ddc69.svg#Londrina Sketch")format("svg");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+    font-family: "Geo";
+    src: url("https://db.onlinewebfonts.com/t/3649b54c51ce62d231d3c7d34846ed49.eot");
+    src: url("https://db.onlinewebfonts.com/t/3649b54c51ce62d231d3c7d34846ed49.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3649b54c51ce62d231d3c7d34846ed49.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3649b54c51ce62d231d3c7d34846ed49.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3649b54c51ce62d231d3c7d34846ed49.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3649b54c51ce62d231d3c7d34846ed49.svg#Geo")format("svg");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
+    src: url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto")format("svg");
+}
+
+.bg-dots {
+    background-color: #e9ecef;
+    background-image: radial-gradient(var(--color-dots) 10%, transparent 10%);
+    background-size: 10px 10px;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
