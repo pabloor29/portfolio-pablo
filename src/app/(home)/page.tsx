@@ -1,3 +1,4 @@
+import Footer from "../../../components/Footer";
 import HeroBanner from "../../../components/HeroBanner";
 import IntroPerson from "../../../components/IntroPerson";
 import Navbar from "../../../components/Navbar";
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroBanner />
       <IntroPerson />
     </div>
+    <Footer />
     </>
   );
 }

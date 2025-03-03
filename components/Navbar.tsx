@@ -16,7 +16,7 @@ import * as SheetPrimitive from "@radix-ui/react-dialog"
 
 const links = [
   {
-    label: "Accueil",
+    label: "Home",
     href: "/",
   },
   {
@@ -81,7 +81,7 @@ function Navbar() {
           <SheetTrigger className="overflow-hidden flex justify-center items-center w-10 h-10 rounded-full bg-whiteSmoked ml-6">
             <Menu color="#80ed99"/>
           </SheetTrigger>
-          <SheetContent className="">
+          <SheetContent className="bg-greenLight/40">
             <SheetHeader className="flex flex-row justify-between">
               <SheetDescription className="flex flex-col w-3/4">
                 {links.map((items) => (
@@ -97,7 +97,7 @@ function Navbar() {
                 ))}
               </SheetDescription>
               <SheetPrimitive.Close className="flex">
-                <X color="#80ed99" className="h-10 w-10 mr-4"/>
+                <X color="#000000" className="h-10 w-10 mr-4"/>
                 <span className="sr-only">Close</span>
               </SheetPrimitive.Close>
             </SheetHeader>
