@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from 'react'
 import { BadgeCheck } from 'lucide-react';
-import { form } from 'framer-motion/client';
 
 function ContactForm() {
 
@@ -54,7 +53,7 @@ function ContactForm() {
             <form 
                 onSubmit={handleSubmit}
             >
-                <div className="flex flex-col gap-14 justify-center items-center min-h-screen w-screen">
+                <div className="flex flex-col gap-14 justify-center items-center min-h-screen w-screen pt-20">
                     <div className="flex flex-col md:w-1/2 w-4/5">
                         <label 
                             htmlFor="fullName"
