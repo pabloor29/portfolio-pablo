@@ -20,8 +20,8 @@ const links = [
     href: "/",
   },
   {
-    label: "Projetcs",
-    href: "/projects",
+    label: "React projetcs",
+    href: "/react-projects",
   },
   {
     label: "Contact",

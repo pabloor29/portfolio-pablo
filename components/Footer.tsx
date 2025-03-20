@@ -1,4 +1,4 @@
-import { Instagram, Linkedin } from 'lucide-react';
+import { Instagram , Linkedin , Github } from 'lucide-react';
 import React from 'react'
 import Link from 'next/link';
 
@@ -28,6 +28,12 @@ function Footer() {
                     className=""
                 >
                     <Linkedin/>
+                </Link>
+                <Link
+                    href="https://github.com/pabloor29?tab=repositories"
+                    className=""
+                >
+                    <Github/>
                 </Link>
             </div>
         </div>
