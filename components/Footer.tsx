@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
     <div className="w-screen flex justify-center">
-        <div className="absolute w-screen md:h-[150px] h-[300px] bg-greenLight/80 blur-xl -z-10"></div>
+        <div className="absolute w-screen md:h-[150px] h-[330px] bg-greenLight/80 blur-xl -z-10"></div>
         <div className="w-3/4 py-8 flex md:flex-row flex-col md:gap-0 gap-11 justify-center items-center">
             <div className="w-1/3 h-full flex items-center justify-center">
                 <a className="font-londrinaSketch font-bold text-4xl text-center" href="">PABLO ORTEGA</a>
