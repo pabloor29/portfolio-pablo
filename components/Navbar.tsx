@@ -88,7 +88,7 @@ function Navbar() {
                   <a
                     key={items.label}
                     href={items.href}
-                    className="overflow-hidden h-20 w-3/5 flex items-center duration-300 px-5 py-3 cursor-pointer"
+                    className="overflow-hidden h-20 w-3/5 flex items-center text-left duration-300 px-5 py-3 cursor-pointer"
                   >
                     <h3 className="text-3xl tracking-wide font-geo text-black">
                       {items.label}
@@ -97,7 +97,7 @@ function Navbar() {
                 ))}
               </SheetDescription>
               <SheetPrimitive.Close className="flex">
-                <X color="#000000" className="h-10 w-10 mr-4"/>
+                <X color="#000000" className="h-10 w-10 mr-4 focus:outline-none focus:ring-0"/>
                 <span className="sr-only">Close</span>
               </SheetPrimitive.Close>
             </SheetHeader>
