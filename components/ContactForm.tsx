@@ -12,7 +12,7 @@ function ContactForm() {
 
     const [succeeded, setSucceeded] = useState(false);
 
-    const handleChange = (e: any) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData({
           ...formData,
@@ -20,7 +20,7 @@ function ContactForm() {
         });
       };
 
-    const handleSubmit = (e: any) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
     
         const {
