@@ -7,12 +7,12 @@ import { PersonStanding, Building2, GraduationCap, Wrench, TentTree } from 'luci
 function IntroPerson() {
   return (
     <>
-    <div className="w-screen flex flex-col items-center justify-center py-12">
+    <div className="w-screen flex flex-col items-center justify-center py-12 gap-10">
+        <div className="w-4/5 h-[600px] relative">
+            <Image key="img" src="/img/person/pablo-001.webp" alt='Pablo' fill className="object-cover"/>
+        </div>
         <div className="w-4/5 flex md:flex-row flex-col justify-between gap-12">
-            <div className="md:w-1/3 w-full h-[600px] relative">
-                <Image key="img" src="/img/person/pablo.png" alt='Pablo' fill className="object-cover"/>
-            </div>
-            <div className="md:w-1/3 w-full flex flex-col gap-12">
+            <div className="w-full flex flex-col gap-12">
                 <div className="">
                     <div className="flex items-center pb-3 gap-3">
                         <PersonStanding />
@@ -72,7 +72,7 @@ function IntroPerson() {
                     </div>
                 </div>
             </div>
-            <div className="md:w-1/3 w-full flex flex-col gap-12">
+            <div className="w-full flex flex-col gap-12">
                 <div className="">
                     <div className="flex items-center pb-3 gap-3">
                         <GraduationCap />
