@@ -7,12 +7,12 @@ import { PersonStanding, Building2, GraduationCap, Wrench, TentTree } from 'luci
 function IntroPerson() {
   return (
     <>
-    <div className="w-screen flex flex-col items-center justify-center py-12">
+    <div className="w-screen flex flex-col items-center justify-center py-12 gap-10">
+        <div className="w-4/5 h-[600px] relative">
+            <Image key="img" src="/img/person/pablo-001.webp" alt='Pablo' fill className="object-cover"/>
+        </div>
         <div className="w-4/5 flex md:flex-row flex-col justify-between gap-12">
-            <div className="md:w-1/3 w-full h-[600px] relative">
-                <Image key="img" src="/img/person/pablo.png" alt='Pablo' fill className="object-cover"/>
-            </div>
-            <div className="md:w-1/3 w-full flex flex-col gap-12">
+            <div className="w-full flex flex-col gap-12">
                 <div className="">
                     <div className="flex items-center pb-3 gap-3">
                         <PersonStanding />
@@ -21,68 +21,81 @@ function IntroPerson() {
                     <p className="relative pb-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-1 before:bg-greenLight before:shadow-lg before:blur font-roboto">
                         My name is Pablo Ortega.
                         <br />
-                        I&apos;m currently in my fourth year of engineering school at CESI Toulouse, studying S3E (electricals and electronics embedded systems).
+                        I&apos;m currently in my final year of engineering school at CESI Toulouse, specialising in S3E (electrical and electronic embedded systems), focused on communicating electronic systems.
                         <br />
                         <br />
-                        I&apos;m also aprentice at SCHAEFFLER, in the Advanced Development department. In this team I&apos;m used as software engineer.
+                        I&apos;m apprentice engineer at SCHAEFFLER Toulouse and self-employed as a web developer &amp; maths tutor. Looking for a permanent position as an embedded software engineer starting November 2026.
                     </p>
                 </div>
                 <div className="">
                     <div className="flex items-center pb-3 gap-3">
                         <Building2 />
-                        <h1 className="font-geo text-4xl">Experiencies</h1>
+                        <h1 className="font-geo text-4xl">Experience</h1>
                     </div>
                     <div className="relative pb-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-1 before:bg-greenLight before:shadow-lg before:blur font-roboto">
                         <div className="w-full pb-5">
-                            <h2 className="font-bold font-roboto">Work-study program at SCHAEFFLER</h2>
-                            <p className="ml-8 font-roboto text-sm">
-                                Softwrae engineer
+                            <div className="flex items-center gap-2 flex-wrap">
+                                <h2 className="font-bold font-roboto">Apprentice Embedded Systems Engineer — SCHAEFFLER</h2>
+                                <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-greenLight text-black">IN PROGRESS</span>
+                            </div>
+                            <p className="ml-8 font-roboto text-sm mt-1">
+                                Sept. 2023 – Sept. 2026 · Toulouse
                                 <br />
-                                From September 18, 2023, for 3 years.
+                                Prototype implementation, decision algorithm &amp; embedded app development, technology analysis.
                                 <br />
-                                C / MATLAB / Arduino
+                                3-month period in Germany (summer 2025) — FMCW 77GHz radar technology transfer.
                                 <br />
-                                Post-process signals / Analyze new technologies
+                                <span className="italic">Final-year project (PFE) as project lead: evaluating FMCW 77GHz radar for hands-free trunk access + A-sample development.</span>
                             </p>
                         </div>
                         <div className="w-full pb-5">
-                            <h2 className="font-bold font-roboto">Internship at BAYER</h2>
-                            <p className="ml-8 font-roboto text-sm">
-                                Maintenance engineer
+                            <div className="flex items-center gap-2 flex-wrap">
+                                <h2 className="font-bold font-roboto">Self-employed — Auto-Entrepreneur</h2>
+                                <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-greenLight text-black">IN PROGRESS</span>
+                            </div>
+                            <p className="ml-8 font-roboto text-sm mt-1">
+                                <span className="font-semibold">Web Developer</span> — Website creation (restaurant, sports coach…). TypeScript / HTML / CSS / Database / UI.
                                 <br />
-                                April 3, 2023 - July 28, 2023 (17 weeks)
+                                <span className="font-semibold">Maths Tutor</span> — Private lessons for middle school students (Brevet preparation).
+                            </p>
+                        </div>
+                        <div className="w-full pb-5">
+                            <h2 className="font-bold font-roboto">Maintenance Engineering Intern — BAYER, Trèbes</h2>
+                            <p className="ml-8 font-roboto text-sm mt-1">
+                                April 3 – July 28, 2023 (17 weeks)
                                 <br />
-                                Understand how an automated printing plant works and correct problems.
+                                Understanding and troubleshooting an automated printing plant. Awarded a &quot;Certificate of Appreciation&quot; for restoring a production line.
                                 <br />
-                                Grafcet / PLC / Mimic diagrams
-                                <br />
-                                Electrical diagram analysis
+                                Grafcet / PLC / SIEMENS TIA Portal / Electrical diagrams
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="md:w-1/3 w-full flex flex-col gap-12">
+            <div className="w-full flex flex-col gap-12">
                 <div className="">
                     <div className="flex items-center pb-3 gap-3">
                         <GraduationCap />
-                        <h1 className="font-geo text-4xl">Diplomas</h1>
+                        <h1 className="font-geo text-4xl">Education</h1>
                     </div>
                     <div className="relative pb-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-1 before:bg-greenLight before:shadow-lg before:blur font-roboto">
                         <div className="w-full pb-5">
-                            <h2 className="font-bold font-roboto">CESI Toulouse</h2>
-                            <p className="ml-8 font-roboto text-sm">
-                                2 years of integrated preparatory cycle for engineering school.
+                            <div className="flex items-center gap-2 flex-wrap">
+                                <h2 className="font-bold font-roboto">CESI Toulouse — Engineering Degree</h2>
+                                <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-greenLight text-black">IN PROGRESS</span>
+                            </div>
+                            <p className="ml-8 font-roboto text-sm mt-1">
+                                Expected graduation: September 2026
                                 <br />
-                                S3E Specialization (electricals and electronics embedded systems).
+                                Integrated preparatory cycle · S3E specialisation (Electrical &amp; Electronic Embedded Systems)
                             </p>
                         </div>
                         <div className="w-full pb-5">
-                            <h2 className="font-bold font-roboto">Jules Fil high school, Carcassonne</h2>
-                            <p className="ml-8 font-roboto text-sm">
-                                Scientific high school diploma.
+                            <h2 className="font-bold font-roboto">Lycée Jules Fil, Carcassonne</h2>
+                            <p className="ml-8 font-roboto text-sm mt-1">
+                                Scientific Baccalauréat
                                 <br />
-                                Option mathematics, physics-chemistry, Life and Earth Sciences
+                                Mathematics, Physics-Chemistry, Life &amp; Earth Sciences
                             </p>
                         </div>
                     </div>
@@ -97,9 +110,9 @@ function IntroPerson() {
                             <ul>
                                 <li>C / C++ / Arduino</li>
                                 <li>MATLAB / Python</li>
-                                <li>Web development</li>
+                                <li>SIEMENS TIA Portal</li>
+                                <li>React / React Native</li>
                                 <li>LTspice / Tinkercad</li>
-                                <li>Office suite</li>
                             </ul>
                         </div>
                         <div className="w-1/2">
@@ -107,8 +120,8 @@ function IntroPerson() {
                                 <li>Problem analysis</li>
                                 <li>Teamwork</li>
                                 <li>Good communication</li>
-                                <li>LEnglish (B2 level)</li>
-                                <li>Spanish (B2 level)</li>
+                                <li>English (B2)</li>
+                                <li>Spanish (B2)</li>
                             </ul>
                         </div>
                     </div>
@@ -121,15 +134,12 @@ function IntroPerson() {
                     <p className="relative pb-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-1 before:bg-greenLight before:shadow-lg before:blur font-roboto">
                         Cooking
                         <br />
-                        Sports : Golf, Rugby, Running
+                        Sports: Trail, Rugby, Golf
                         <br />
                         Travelling
                     </p>
                 </div>
             </div>
-        </div>
-        <div className="w-4/5">
-
         </div>
     </div>
     </>
